@@ -1,0 +1,120 @@
+body{
+    background-image: url("../pocetna.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    font-family: 'Poppins', sans-serif;
+    /* Dodao sam malo css kao na kviz.css */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.parent{
+    background-color: rgb(233, 195, 27);
+    /* background: ; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    height: 400px;
+    max-width: 80%;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    border: 5px solid green;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#flag{
+    text-align: center;
+    height: 100px;
+    width: auto;
+}
+
+.quiz-header{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(233, 195, 27);
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/* ul{
+}
+
+ul > li{
+    margin-left: -10%; 
+} */
+
+ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  ul li label{
+    cursor: pointer;
+  } 
+
+#submit{
+    background-color: #03cae4;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#submit:hover{ 
+    background-color: green;
+    color: white;
+}
+button{
+    background-color: #03cae4;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+    
+  }
+  button:hover{
+    background-color: #04adc4;
+  }
+  button:focus{
+    outline: none;
+    background-color: #44b927;
+  }
+
+  @media screen and (max-width: 400px) {
+      
+      .parent{
+        top: 20%;
+        left: 10%;
+      }
+
+  }
+
+  @media screen and (min-width: 401px) and (max-width: 800px) {
+      
+    .parent{
+      top: 20%;
+      left: 10%;
+    }
+  } 
+@media screen and (min-width: 801px){
+
+    .parent{
+      top: 25%;
+      left: 25%;
+    } 
+}
